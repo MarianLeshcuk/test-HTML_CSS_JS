@@ -1,0 +1,717 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.menu__navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(white, aliceblue);
+    position: fixed;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
+    overflow: hidden;
+    z-index: 1000;
+    top: 0;
+    justify-content: center;
+
+}
+
+.menu__item {
+    color: #481c00;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #ffd8a3;
+}
+
+.menu__item:hover {
+    color: #fa9c1c;
+}
+
+.menu__item:hover .menu__item-underline {
+    width: 100%;
+    transition: 1s;
+}
+
+.menu__item-underline {
+    margin: 0 auto;
+    margin-bottom: -5px;
+    margin-top: 5px;
+    width: 0%;
+    height: 3px;
+    background: #fa9c1c;
+}
+
+.logo__beer {
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.logo__text {
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    color: #fa9c1c;
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 100px;
+    position: relative;
+    top: 5px;
+}
+
+/*////Vasyl*/
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.shop__h2 {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    margin-top: 40%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.price {
+    font-family: cursive;
+    color: brown;
+    font-size: 20px;
+}
+
+.main {
+    width: 100%;
+    min-width: 260px;
+    max-width: 960px;
+    margin: auto;
+    flex: auto;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    /*    background: blue;*/
+}
+
+.grid-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+img:hover {
+    margin-top: -5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.shop__container-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: #fa9c1c;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px;
+    transition: 0.2s;
+    width: 60px;
+}
+
+.shop__button-delivery {
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: #fa9c1c;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px;
+    transition: 0.2s;
+    width: 200px;
+}
+
+button:hover {
+    background: #d7820f;
+    cursor: pointer;
+}
+
+.shop__button-small {}
+
+/*chose pack*/
+
+#half,
+#half_1,
+#half_2,
+#half_3,
+#half_4,
+#half_5,
+#half_6,
+#half_7 {
+    display: none;
+}
+
+#one_half,
+#one_half_1,
+#one_half_2,
+#one_half_3,
+#one_half_4,
+#one_half_5,
+#one_half_6,
+#one_half_7 {
+    display: none;
+}
+
+/*
+
+////Iryna modal
+*/
+
+.delivery__block {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #efefef;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+
+}
+
+.delivery__modal-background {
+    display: none;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black w/ opacity */
+}
+
+
+.delivery__modal-content {
+    background: white;
+    padding: 40px;
+    padding-bottom: 200px;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 25px;
+    color: brown;
+    height: 300px;
+    text-align: center;
+}
+
+/* The Close Button */
+
+.close {
+    position: relative;
+    top: 0px;
+    left: 140px;
+    color: #aaa;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.close:hover {
+    color: red;
+}
+
+
+
+.delivery__modal-button {
+    align-items: center;
+    margin: auto;
+    width: 200px;
+    border: 5px solid #fa9c1c;
+    height: 50px;
+    background: none;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.delivery__modal-button:hover {
+    color: white;
+    transition: 1s;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+    background: #fa9c1c;
+}
+
+.img__modal-beer {
+    position: relative;
+    height: 30px;
+    left: 1px;
+    float: left;
+    top: -10px;
+}
+
+.img__modal-beer:hover {
+    filter: saturate(10);
+}
+
+.delivery__modal-button-text {
+    position: relative;
+    top: -5px;
+}
+
+input[type=text],
+input[type=number] {
+    width: 230px;
+    height: 35px;
+    border: 2x solid rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+.delivery__content-button {
+    width: 230px;
+    height: 50px;
+    background: #fa9c1c;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fa9c1c;
+
+}
+
+.delivery__content-button:hover {
+    color: #fa9c1c;
+    background: white;
+    transition: 1s;
+}
+
+.delivery__modal-h4 {
+    position: relative;
+    margin-top: -25px;
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+/*Yura*/
+
+.text_in_jaba-small {
+    padding-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+    color: grey;
+}
+
+.main__text-button {
+    width: 200px;
+    height: 60px;
+    background: transparent;
+    border: 5px solid #fa9c1c;
+    color: black;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.main__text-button:hover {
+    color: white;
+    background: #fa9c1c;
+}
+
+#dart {
+    height: 620px;
+    width: 460px;
+    background-image: url(/images/lord.jpg);
+    background-size: cover;
+    margin-left: 70px
+}
+
+#earth {
+    margin: 50px 0 0 140px;
+    width: 150px;
+    height: 150px;
+    background-image: url(/images/star.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+}
+
+#moon {
+    width: 80px;
+    height: 80px;
+    background-image: url(/images/porter.png);
+    background-size: cover;
+    position: relative;
+    top: 100px;
+    left: 0px;
+    display: block;
+}
+
+#yoda {
+    background-image: url(/images/yoda___vector_by_weirdoowl-d9z41qk.png);
+    height: 620px;
+    width: 400px;
+    background-size: cover;
+    float: right
+}
+
+.dark_container {
+    width: 50%;
+    float: left;
+    border-radius: 30%
+}
+
+.light_container {
+    width: 50%;
+    float: left;
+    border-radius: 30%
+}
+
+.container_star_wars_pivko {
+    margin-top: 50px;
+    width: 100%;
+    height: 620px;
+    display: block;
+}
+
+#pivko_yoda {
+    width: 44px;
+    height: 150px;
+    background-image: url(/images/cider.png);
+    position: relative;
+    background-size: contain;
+    left: 80%;
+    top: 80px;
+    display: block;
+}
+
+.tooltip {
+    -webkit-box-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black;
+    background-color: whitesmoke;
+    border: solid black 0.5px;
+    padding: 5px;
+    font: bold 10pt sans-serif;
+    z-index: 11;
+}
+
+.container_text_pivka {
+    padding-top: 120px;
+    width: 100%;
+    height: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    /*    background-color: #faf6b1;*/
+}
+
+.text_in_jaba {
+    width: 70%;
+    margin: auto
+}
+
+#mashinka {
+    width: 150px;
+    height: 150px;
+    background-image: url(/Beer_icon-icons.com_52260.png);
+    background-size: cover;
+    float: left;
+
+}
+
+.transition_pivko {
+    float: left;
+    width: 50px;
+    height: 150px;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+}
+
+.transition_pivko:hover {
+    width: 45%;
+}
+
+
+
+@media screen and (min-width: 430px)and (max-width: 980px) {
+    .text_in_jaba {
+        width: 70%;
+        margin: auto
+    }
+
+    .container_star_wars_pivko {
+        width: 100%;
+        height: 220px;
+        display: none;
+    }
+
+    .tooltip {
+        -webkit-box-shadow: 1px 1px 1px black;
+        box-shadow: 1px 1px 2px black;
+        background-color: whitesmoke;
+        border: solid black 0.5px;
+        padding: 1px;
+        font: bold 5pt sans-serif;
+        z-index: 11;
+    }
+
+    .container_text_pivka {
+        width: 100%;
+        height: 245px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        background-color: #faf6b1;
+
+
+
+    }
+
+    #mashinka {
+        width: 50px;
+        height: 50px;
+        background-image: url(/Beer_icon-icons.com_52260.png);
+        background-size: cover;
+        margin: auto
+    }
+
+    .transition_pivko {
+        float: left;
+        width: 50px;
+        height: 50px;
+        transition: width 2s;
+        -webkit-transition: width 2s;
+    }
+    .transition_pivko:hover {
+        width: 45%;
+    }
+
+    .container_gipnojaba {
+        margin: auto;
+        background-image: url(/images/gipno.gif);
+        width: 350px;
+        height: 300px;
+        background-size: cover;
+
+    }
+
+}
+
+
+@media screen and (max-width: 430px) {
+    .text_in_jaba {
+        width: 70%;
+        margin: auto
+    }
+    .container_star_wars_pivko {
+        display: none;
+    }
+
+    .tooltip {
+        -webkit-box-shadow: 1px 1px 1px black;
+        box-shadow: 1px 1px 2px black;
+        background-color: whitesmoke;
+        border: solid black 0.5px;
+        padding: 1px;
+        font: bold 5pt sans-serif;
+        z-index: 11;
+    }
+
+    .container_text_pivka {
+        width: 100%;
+        height: 140px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        text-align: center;
+    }
+    #mashinka {
+        width: 20px;
+        height: 20px;
+        background-image: url(/Beer_icon-icons.com_52260.png);
+        background-size: cover;
+        margin: auto
+    }
+
+    .transition_pivko {
+        float: left;
+        width: 20px;
+        height: 20px;
+        transition: width 2s;
+        -webkit-transition: width 2s;
+    }
+    .transition_pivko:hover {
+        width: 45%;
+    }
+
+    .container_gipnojaba {
+        margin: 10% auto;
+        background-image: url(/images/gipno.gif);
+        width: 35vw;
+        height: 30vw;
+        background-size: cover;
+
+    }
+
+}
+
+@media screen and (min-width: 520px)and (max-width: 980px) {
+    .text_in_jaba {
+        width: 80%;
+        margin: auto
+    }
+    .container_text_pivka {
+        width: 100%;
+        height: 300px;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    #mashinka {
+        width: 100px;
+        height: 100px;
+        background-image: url(/Beer_icon-icons.com_52260.png);
+        background-size: cover;
+        margin: auto
+    }
+
+    .transition_pivko {
+        float: left;
+        width: 100px;
+        height: 100px;
+        transition: width 2s;
+        -webkit-transition: width 2s;
+    }
+    .transition_pivko:hover {
+        width: 45%;
+    }
+
+}
+
+/**--//Statistics Iryna*/
+
+.main__statistic-block {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    align-self: center;
+}
+
+.main__statistic-h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.main__statistic-container {
+    flex-direction: row;
+    width: 200px;
+    height: 250px;
+    /*    border: 1px solid red;*/
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.main__statistic-numbers {
+    font-size: 80px;
+    color: #fa9c1c;
+    text-align: center;
+}
+
+.main__statistic-text {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.contact__main-container {
+    background: #efefefef;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+
+.contact__map {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.contact__text {
+    height: 150px;
+    width: 250px;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer {
+    height: 60px;
+    background: black;
+    color: grey;
+    text-align: center;
+    line-height: 60px;
+    margin: auto;
+    width: 100%;
+}
+
+footer:hover {
+    color: white;
+}

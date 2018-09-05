@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Доставка пива у Льовові</title>
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js"></script>
+</head>
+<header> //меню
+    <div class="menu__navigation">
+
+        <a type="button" href="#main"><img src="images/logo.png" class="logo__beer"></a>
+        <a type="button" href="#main" class="logo__text">Найліпше пиво у Львові</a>
+        <a type="button" href="#main" class="menu__item" id="menuMain">Головна<div class="menu__item-underline"></div></a>
+        <a type="button" href="#beer" class="menu__item" id="menuBeer">Наше пиво
+        <div class="menu__item-underline"></div></a>
+        <a type="button" href="#delivery" class="menu__item" id="menuDelivery">Доставка
+        <div class="menu__item-underline"></div></a>
+        <a type="button" href="#contact" class="menu__item" id="menuContact">Контакти
+        <div class="menu__item-underline"></div></a>
+
+
+    </div>
+</header>
+
+<body>
+
+    <div class="container_text_pivka" id="main">
+        <div class="text_in_jaba">
+            <p>На дворі зима, а тобі не хочеться виходити з дому?!<br> Ми розуміємо тебе як ніхто інший.<br> Замовляй наше пиво не виходячи з хати!<br>
+                <div class="text_in_jaba-small"> Якщо вже й вдома холодно то хоч з пивом мерзнути веселіше :)
+                </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container_gipnojaba"></div>
+    <div class="container_star_wars_pivko" id="test">
+        <div class="dark_container" id="rect" onclick="myFunctionDarth()">
+            <div id="dart">
+                <div id="earth"> </div>
+                <div id="moon"></div>
+            </div>
+        </div>
+        <div class="light_container" id="rect2" onclick="myFunctionYoda()">
+            <div id="yoda"></div>
+            <div id="pivko_yoda"></div>
+        </div>
+    </div>
+
+
+
+
+    <!--    *////Vasyl-->
+    <main class="main" id="beer">
+        <div class="shop__h2">Нашe пиво</div>
+        <div class="grid">
+            <!--1 товар-->
+            <div class="grid-item">
+                <div class="grid-img">
+                    <img src="images/beer-1.png" alt="Berlinger">
+                </div>
+                <h2>Берлінгер</h2>
+                <p>Пиво світле фільтроване 4.8°</p>
+                <div class="shop__container-buttons">
+                    <button id="litr05">0.5 л</button>
+                    <button id="litr1">1 л</button>
+                    <button id="litr15">1.5 л</button>
+                </div>
+                <p>
+                    <span id="half">Ціна: <span class="price">19.99 грн</span> за 0.5 л.</span>
+                    <span id="one">Ціна: <span class="price">39.99 грн</span> за 1 л.</span>
+                    <span id="one_half">Ціна: <span class="price">49.99 грн</span> за 1.5 л.</span>
+                </p>
+                <button class="shop__button-delivery" id="myDelivery1">Замовити</button>
+            </div>
+            <!--2 товар-->
+            <div class="grid-item">
+                <div class="grid-img">
+                    <img src="images/beer2.png" alt="mukylyn">
+                </div>
+                <h2>Микулин 900</h2>
+                <p>Пиво світле фільтроване 4.9°</p>
+                <div class="shop__container-buttons">
+                    <button id="litr05_1">0.5 л</button>
+                    <button id="litr1_1">1 л</button>
+                    <button id="litr15_1">1.5 л</button>
+                </div>
+                <p>
+                    <span id="half_1">Ціна: <span class="price">16.99 грн</span> за 0.5 л.</span>
+                    <span id="one_1">Ціна: <span class="price">36.99 грн</span> за 1 л.</span>
+                    <span id="one_half_1">Ціна: <span class="price">46.99 грн</span> за 1.5 л.</span>
+                </p>
+                <button class="shop__button-delivery" id="myDelivery2">Замовити</button>
+            </div>
+            <!--3 товар-->
+            <div class="grid-item">
+                <div class="grid-img">
+                    <img src="images/beer3.png" alt="1664">
+                </div>
+                <h2>Кроненбург Бланш</h2>
+                <p>Пиво світле нефільтроване 4.8°</p>
+                <div class="shop__container-buttons">
+                    <button id="litr05_2">0.5 л</button>
+                    <button id="litr1_2">1 л</button>
+                    <button id="litr15_2">1.5 л</button>
+                </div>
+                <p>
+                    <span id="half_2">Ціна: <span class="price">34.99 грн</span> за 0.5 л.</span>
+                    <span id="one_2">Ціна: <span class="price">46.99 грн</span> за 1 л.</span>
+                    <span id="one_half_2">Ціна: <span class="price">56.99 грн</span> за 1.5 л.</span>
+                </p>
+                <button class="shop__button-delivery" id="myDelivery3">Замовити</button>
+            </div>
+            <!--4 товар-->
+            <div class="grid-item">
+                <div class="grid-img">
+                    <img src="images/beer4.png" alt="Waissburg">
+                </div>
+                <h2>Вайсбург</h2>
+                <p>Пиво світле фільтроване 4.7°</p>
+                <div class="shop__container-buttons">
+                    <button id="litr05_3">0.5 л</button>
+                    <button id="litr1_3">1 л</button>
+                    <button id="litr15_3">1.5 л</button>
+                </div>
+                <p>
+                    <span id="half_3">Ціна: <span class="price">15.99 грн</span> за 0.5 л.</span>
+                    <span id="one_3">Ціна: <span class="price">32.99 грн</span> за 1 л.</span>
+                    <span id="one_half_3">Ціна: <span class="price">42.99 грн</span> за 1.5 л.</span>
+                </p>
+                <button class="shop__button-delivery" id="myDelivery4">Замовити</button>
+            </div>
+            <!--5 товар-->
+            <div class="grid-item">
+                <div class="grid-img">
+                    <img src="images/beer5.png" alt="Garage">
+                </div>
+                <h2>Гараж лимон</h2>
+                <p>Пиво світле фільтроване 4.6°</p>
+                <div class="shop__container-buttons">
+                    <button id="litr05_4">0.5 л</button>
+                    <button id="litr1_4">1 л</button>
+                    <button id="litr15_4">1.5 л</button>
+                </div>
+                <p>
+                    <span id="half_4">Ціна: <span class="price">19.99 грн</span> за 0.5 л.</span>
+                    <span id="one_4">Ціна: <span class="price">36.99 грн</span> за 1 л.</span>
+                    <span id="one_half_4">Ціна: <span class="price">46.99 грн</span> за 1.5 л.</span>
+                </p>
+                <button class="shop__button-delivery" id="myDelivery5">Замовити</button>
+            </div>
+            <!--6 товар-->
+            <div class="grid-item">
+                <div class="grid-img">
+                    <img src="images/beer6.png" alt="mukylyn">
+                </div>
+                <h2>Джон Гаспар</h2>
+                <p>Пиво темне нефільтроване 5.0°</p>
+                <div class="shop__container-buttons">
+                    <button id="litr05_5">0.5 л</button>
+                    <button id="litr1_5">1 л</button>
+                    <button id="litr15_5">1.5 л</button>
+                </div>
+                <p>
+                    <span id="half_5">Ціна: <span class="price">20.00 грн</span> за 0.5 л.</span>
+                    <span id="one_5">Ціна: <span class="price">37.99 грн</span> за 1 л.</span>
+                    <span id="one_half_5">Ціна: <span class="price">46.99 грн</span> за 1.5 л.</span>
+                </p>
+                <button class="shop__button-delivery" id="myDelivery6">Замовити</button>
+            </div>
+            <!--7 товар-->
+            <div class="grid-item">
+                <div class="grid-img">
+                    <img src="images/beer7.png" alt="Djuhyl">
+                </div>
+                <h2>Жигулівське</h2>
+                <p>Пиво світле нефільтроване 4.2°</p>
+                <div class="shop__container-buttons">
+                    <button id="litr05_6">0.5 л</button>
+                    <button id="litr1_6">1 л</button>
+                    <button id="litr15_6">1.5 л</button>
+                </div>
+                <p>
+                    <span id="half_6">Ціна: <span class="price">29.99 грн</span> за 0.5 л.</span>
+                    <span id="one_6">Ціна: <span class="price">39.99 грн</span> за 1 л.</span>
+                    <span id="one_half_6">Ціна: <span class="price">49.99 грн</span> за 1.5 л.</span>
+                </p>
+                <button class="shop__button-delivery" id="myDelivery7">Замовити</button>
+            </div>
+            <!--8 товар-->
+            <div class="grid-item">
+                <div class="grid-img">
+                    <img src="images/beer8.png" alt="Bawaria">
+                </div>
+                <h2>Нова Баварія</h2>
+                <p>Пиво світле фільтроване 4.2°</p>
+                <div class="shop__container-buttons">
+                    <button id="litr05_7">0.5 л</button>
+                    <button id="litr1_7">1 л</button>
+                    <button id="litr15_7">1.5 л</button>
+                </div>
+                <p>
+                    <span id="half_7">Ціна: <span class="price">14.99 грн</span> за 0.5 л.</span>
+                    <span id="one_7">Ціна: <span class="price">25.99 грн</span> за 1 л.</span>
+                    <span id="one_half_7">Ціна: <span class="price">31.99 грн</span> за 1.5 л.</span>
+                </p>
+                <button class="shop__button-delivery" id="myDelivery8">Замовити</button>
+            </div>
+        </div>
+    </main>
+
+
+    <!--*//Iryna-->
+    <div class="delivery__block" id="delivery">
+        <button id="myBtn" class="delivery__modal-button">
+    <img src="images/beer.svg" class="img__modal-beer"><div class="delivery__modal-button-text">ДОСТАВКА</div>
+    </button>
+        <div id="myModal" class="delivery__modal-background">
+
+
+            <div class="delivery__modal-content">
+                <span class="close">×</span>
+                <div class="delivery__modal-h4">ДОСТАВКА</div>
+
+                <div>Як вас звати?<input type="text"></div>
+                <div>Ваше місто<input type="text"></div>
+                <div>Вулиця<input type="text"></div>
+                <div>Будинок<input type="number"></div>
+                <button type="button" class="delivery__content-button"><img src="images/beer2.svg"class="img__modal-beer">
+                ХОЧУ ПИВО</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main__statistic-block" id="myStats">
+
+        <h1 class="main__statistic-h1">ЯК МИ ТВОРИМО НАШЕ ПИВО?</h1>
+        <div class="main__statistic-container">
+            <div class="main__statistic-numbers" id="Count">14</div>
+            <div class="main__statistic-text">Людей працює в броварні</div>
+        </div>
+        <div class="main__statistic-container">
+            <div class="main__statistic-numbers" id="Count">89</div>
+            <div class="main__statistic-text">Бочок з пивом живого бродіння</div>
+        </div>
+        <div class="main__statistic-container">
+            <div class="main__statistic-numbers" id="Count">20</div>
+            <div class="main__statistic-text">Унікальних рецептів найфайнішого пива у Львові</div>
+        </div>
+        <div class="main__statistic-container">
+            <div class="main__statistic-numbers" id="Count">350</div>
+            <div class="main__statistic-text">Літрів свіжого пива кожного дня</div>
+        </div>
+
+
+    </div>
+ 
+    <div class="contact" id="contact">
+
+        <div class="contact__main-container">
+           
+            <div class="contact__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41193.70639962723!2d24.042428679101565!3d49.81226229999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ac2a81428af09%3A0x5abd2110c658968f!2z0J_QtdGA0YjQsCDQv9GA0LjQstCw0YLQvdCwINCx0YDQvtCy0LDRgNC90Y8!5e0!3m2!1suk!2sua!4v1517142905132" width="450" height="350" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+
+            <div class="contact__text">Наші контакти:<br><br> +380505569885 <br>+380635589696 beerlviv@gmail.com </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+<footer> © 2018 Best Team JS
+</footer>
+
+</html>
